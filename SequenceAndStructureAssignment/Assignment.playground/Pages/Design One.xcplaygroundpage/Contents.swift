@@ -33,12 +33,30 @@ for x in stride(from: 25, through: 475, by: 50){
     for y in stride(from: 25, through: 475, by: 50) {
         
         // Draw the shapes
-        canvas.drawEllipse(centreX: x, centreY: y, width: 2, height: 2)
         canvas.drawRectangle(centreX: x, centreY: y, width: 50, height: 50)
     }
 }
+for X in stride(from: 0, through: 500, by: 16) {
+            canvas.drawLine(fromX: 0, fromY: X, toX: X, toY: 0)
+    //choose the color
+    if X % 1 == 0 {
+        canvas.defaultLineWidth = 6
+    }else{
+        canvas.defaultLineWidth = 1
+    }
+}
+for Y in stride(from: 11, through: 500, by: 16){
+    
+    
+    //choose the color
+    if Y % 1 == 0 {
+        canvas.defaultLineWidth = 6
+    }else{
+        canvas.defaultLineWidth = 1
+    }
 
-
+    canvas.drawLine(fromX: Y, fromY: 500, toX: 500, toY: Y)
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
