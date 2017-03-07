@@ -21,21 +21,7 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 500, height: 500)
 
-// Generate a grid
-canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth = 1
 
-
-//// This loop makes a 10 rows of columns
-//for x in stride(from: 25, through: 475, by: 50){
-//    
-//    // This loop makes a single column, bottom to top
-//    for y in stride(from: 25, through: 475, by: 50) {
-//        
-//        // Draw the shapes
-//        canvas.drawRectangle(centreX: x, centreY: y, width: 50, height: 50)
-//    }
-//}
 for X in stride(from: 0, through: 500, by: 20) {
     canvas.drawLine(fromX: 0, fromY: X, toX: X, toY: 0)
     //choose the color
@@ -68,35 +54,15 @@ for  i in stride(from: 0, through: 24, by: 3){
         
     }
     
-    
-    canvas.drawLine(fromX: 10+i*2, fromY: 502-i, toX: 80+i*2, toY: 577-i)
-    canvas.drawLine(fromX: 10+i*2, fromY: 425-i, toX: 80+i*2, toY: 500-i)
-    canvas.drawLine(fromX: 10+i*2, fromY: 348-i, toX: 80+i*2, toY: 423-i)
-    canvas.drawLine(fromX: 10+i*2, fromY: 271-i, toX: 80+i*2, toY: 346-i)
-    canvas.drawLine(fromX: 10+i*2, fromY: 194-i, toX: 80+i*2, toY: 269-i)
-    canvas.drawLine(fromX: 10+i*2, fromY: 122-i, toX: 80+i*2, toY: 192-i)
-    canvas.drawLine(fromX: 10+i*2, fromY: 45-i, toX: 80+i*2, toY: 115-i)
-    canvas.drawLine(fromX: 10+i*2, fromY: -32-i, toX: 80+i*2, toY: 38-i)
-    
-    canvas.drawLine(fromX: 187+i*2, fromY: 502-i, toX: 257+i*2, toY: 577-i)
-    canvas.drawLine(fromX: 187+i*2, fromY: 425-i, toX: 257+i*2, toY: 500-i)
-    canvas.drawLine(fromX: 187+i*2, fromY: 348-i, toX: 257+i*2, toY: 423-i)
-    canvas.drawLine(fromX: 187+i*2, fromY: 271-i, toX: 257+i*2, toY: 346-i)
-    canvas.drawLine(fromX: 187+i*2, fromY: 194-i, toX: 257+i*2, toY: 269-i)
-    canvas.drawLine(fromX: 187+i*2, fromY: 122-i, toX: 257+i*2, toY: 192-i)
-    canvas.drawLine(fromX: 187+i*2, fromY: 45-i, toX: 257+i*2, toY: 115-i)
-    canvas.drawLine(fromX: 187+i*2, fromY: -32-i, toX: 257+i*2, toY: 38-i)
-    
-    canvas.drawLine(fromX: 364+i*2, fromY: 502-i, toX: 434+i*2, toY: 577-i)
-    canvas.drawLine(fromX: 364+i*2, fromY: 425-i, toX: 434+i*2, toY: 500-i)
-    canvas.drawLine(fromX: 364+i*2, fromY: 348-i, toX: 434+i*2, toY: 423-i)
-    canvas.drawLine(fromX: 364+i*2, fromY: 271-i, toX: 434+i*2, toY: 346-i)
-    canvas.drawLine(fromX: 364+i*2, fromY: 194-i, toX: 434+i*2, toY: 269-i)
-    canvas.drawLine(fromX: 364+i*2, fromY: 122-i, toX: 434+i*2, toY: 192-i)
-    canvas.drawLine(fromX: 364+i*2, fromY: 45-i, toX: 434+i*2, toY: 115-i)
-    canvas.drawLine(fromX: 364+i*2, fromY: -32-i, toX: 434+i*2, toY: 38-i)
-    
+    for y in stride(from: 502, through: -32, by: -77){
+        
+        canvas.drawLine(fromX: 10+i*2, fromY: y-i, toX: 80+i*2, toY: y+75-i)
+        canvas.drawLine(fromX: 187+i*2, fromY: y-i, toX: 257+i*2, toY: y+75-i)
+        canvas.drawLine(fromX: 364+i*2, fromY: y-i, toX: 434+i*2, toY: y+75-i)
+    }
 }
+
+
 
 /*:
  ## Template code
