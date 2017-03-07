@@ -67,6 +67,8 @@ for  i in stride(from: 0, through: 24, by: 3){
         canvas.lineColor = Color.white
         
     }
+    
+    
     canvas.drawLine(fromX: 10+i*2, fromY: 502-i, toX: 80+i*2, toY: 577-i)
     canvas.drawLine(fromX: 10+i*2, fromY: 425-i, toX: 80+i*2, toY: 500-i)
     canvas.drawLine(fromX: 10+i*2, fromY: 348-i, toX: 80+i*2, toY: 423-i)
@@ -76,23 +78,23 @@ for  i in stride(from: 0, through: 24, by: 3){
     canvas.drawLine(fromX: 10+i*2, fromY: 45-i, toX: 80+i*2, toY: 115-i)
     canvas.drawLine(fromX: 10+i*2, fromY: -32-i, toX: 80+i*2, toY: 38-i)
     
-    canvas.drawLine(fromX: 183+i*2, fromY: 502-i, toX: 253+i*2, toY: 577-i)
-    canvas.drawLine(fromX: 183+i*2, fromY: 425-i, toX: 253+i*2, toY: 500-i)
-    canvas.drawLine(fromX: 183+i*2, fromY: 348-i, toX: 253+i*2, toY: 423-i)
-    canvas.drawLine(fromX: 183+i*2, fromY: 271-i, toX: 253+i*2, toY: 346-i)
-    canvas.drawLine(fromX: 183+i*2, fromY: 194-i, toX: 253+i*2, toY: 269-i)
-    canvas.drawLine(fromX: 183+i*2, fromY: 122-i, toX: 253+i*2, toY: 192-i)
-    canvas.drawLine(fromX: 183+i*2, fromY: 45-i, toX: 253+i*2, toY: 115-i)
-    canvas.drawLine(fromX: 183+i*2, fromY: -32-i, toX: 253+i*2, toY: 38-i)
+    canvas.drawLine(fromX: 187+i*2, fromY: 502-i, toX: 257+i*2, toY: 577-i)
+    canvas.drawLine(fromX: 187+i*2, fromY: 425-i, toX: 257+i*2, toY: 500-i)
+    canvas.drawLine(fromX: 187+i*2, fromY: 348-i, toX: 257+i*2, toY: 423-i)
+    canvas.drawLine(fromX: 187+i*2, fromY: 271-i, toX: 257+i*2, toY: 346-i)
+    canvas.drawLine(fromX: 187+i*2, fromY: 194-i, toX: 257+i*2, toY: 269-i)
+    canvas.drawLine(fromX: 187+i*2, fromY: 122-i, toX: 257+i*2, toY: 192-i)
+    canvas.drawLine(fromX: 187+i*2, fromY: 45-i, toX: 257+i*2, toY: 115-i)
+    canvas.drawLine(fromX: 187+i*2, fromY: -32-i, toX: 257+i*2, toY: 38-i)
     
-    canvas.drawLine(fromX: 356+i*2, fromY: 502-i, toX: 426+i*2, toY: 577-i)
-    canvas.drawLine(fromX: 356+i*2, fromY: 425-i, toX: 426+i*2, toY: 500-i)
-    canvas.drawLine(fromX: 356+i*2, fromY: 348-i, toX: 426+i*2, toY: 423-i)
-    canvas.drawLine(fromX: 356+i*2, fromY: 271-i, toX: 426+i*2, toY: 346-i)
-    canvas.drawLine(fromX: 356+i*2, fromY: 194-i, toX: 426+i*2, toY: 269-i)
-    canvas.drawLine(fromX: 356+i*2, fromY: 122-i, toX: 426+i*2, toY: 192-i)
-    canvas.drawLine(fromX: 356+i*2, fromY: 45-i, toX: 426+i*2, toY: 115-i)
-    canvas.drawLine(fromX: 356+i*2, fromY: -32-i, toX: 426+i*2, toY: 38-i)
+    canvas.drawLine(fromX: 364+i*2, fromY: 502-i, toX: 434+i*2, toY: 577-i)
+    canvas.drawLine(fromX: 364+i*2, fromY: 425-i, toX: 434+i*2, toY: 500-i)
+    canvas.drawLine(fromX: 364+i*2, fromY: 348-i, toX: 434+i*2, toY: 423-i)
+    canvas.drawLine(fromX: 364+i*2, fromY: 271-i, toX: 434+i*2, toY: 346-i)
+    canvas.drawLine(fromX: 364+i*2, fromY: 194-i, toX: 434+i*2, toY: 269-i)
+    canvas.drawLine(fromX: 364+i*2, fromY: 122-i, toX: 434+i*2, toY: 192-i)
+    canvas.drawLine(fromX: 364+i*2, fromY: 45-i, toX: 434+i*2, toY: 115-i)
+    canvas.drawLine(fromX: 364+i*2, fromY: -32-i, toX: 434+i*2, toY: 38-i)
     
 }
 
