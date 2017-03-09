@@ -19,7 +19,8 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 500, height: 500)
+//let canvas = Canvas(width: 500, height: 500)
+let canvas = Canvas(width: 500, height: 500, quality: Quality.Ultra)
 
 
 for X in stride(from: 0, through: 500, by: 20) {
@@ -54,14 +55,14 @@ for  i in stride(from: 0, through: 24, by: 3){
         
     }
     
-    for y in stride(from: 502, through: -32, by: -77){
+    for y in stride(from: 502, through: -109, by: -77){
         
         canvas.drawLine(fromX: 10+i*2, fromY: y-i, toX: 80+i*2, toY: y+75-i)
         canvas.drawLine(fromX: 187+i*2, fromY: y-i, toX: 257+i*2, toY: y+75-i)
         canvas.drawLine(fromX: 364+i*2, fromY: y-i, toX: 434+i*2, toY: y+75-i)
     }
 }
-
+canvas.copyToClipboard()
 
 
 /*:
