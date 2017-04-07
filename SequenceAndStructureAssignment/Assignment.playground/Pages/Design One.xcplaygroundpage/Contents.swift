@@ -20,32 +20,23 @@ import PlaygroundSupport
 
 // Create canvas
 //let canvas = Canvas(width: 500, height: 500)
-let canvas = Canvas(width: 500, height: 500, quality: Quality.Ultra)
+let canvas = Canvas(width: 500, height: 500)
 
 
 for X in stride(from: 0, through: 500, by: 20) {
     canvas.drawLine(fromX: 0, fromY: X, toX: X, toY: 0)
     //choose the color
-    if X % 1 == 0 {
-        canvas.defaultLineWidth = 7
-    }else{
-        canvas.defaultLineWidth = 1
-    }
+    canvas.defaultLineWidth = 7
 }
 for Y in stride(from: 20, through: 500, by: 20){
     
     
     //choose the color
-    if Y % 1 == 0 {
         canvas.defaultLineWidth = 7
-    }else{
-        canvas.defaultLineWidth = 1
-    }
     
     canvas.drawLine(fromX: Y, fromY: 500, toX: 500, toY: Y)
+
 }
-
-
 for  i in stride(from: 0, through: 24, by: 3){
     if i % 6 == 0 {
         canvas.defaultLineWidth = 7
@@ -62,7 +53,7 @@ for  i in stride(from: 0, through: 24, by: 3){
         canvas.drawLine(fromX: 364+i*2, fromY: y-i, toX: 434+i*2, toY: y+75-i)
     }
 }
-canvas.copyToClipboard()
+
 
 
 /*:
